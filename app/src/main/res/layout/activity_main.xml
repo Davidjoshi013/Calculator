@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#777474"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tvExpression"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:ellipsize="start"
+        android:gravity="end"
+        android:singleLine="true"
+        android:text=""
+        android:textColor="@color/black"
+        android:textSize="40sp" />
+
+    <TextView
+        android:id="@+id/tvOutput"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:ellipsize="start"
+        android:gravity="end"
+        android:singleLine="true"
+        android:text=""
+        android:textColor="@color/black"
+        android:textSize="60sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+
+
+            <TextView
+                android:id="@+id/tvOpenbrackect"
+                style="@style/numBtnStyle"
+                android:background="#455A64"
+                android:text="("
+                android:textColor="@color/white"
+                android:textSize="30dp" />
+
+            <TextView
+                android:id="@+id/tvClosebracket"
+                style="@style/numBtnStyle"
+                android:background="#455A64"
+                android:text=")"
+                android:textColor="@color/white"
+                android:textSize="30dp" />
+
+            <TextView
+                android:id="@+id/tvDivide"
+                style="@style/numBtnStyle"
+                android:background="#455A64"
+                android:text="/"
+                android:textColor="@color/white"
+                android:textSize="30dp" />
+
+            <ImageView
+                android:id="@+id/tvBackbtn"
+                style="@style/numBtnStyle"
+                android:background="#455A64"
+                android:padding="5mm"
+                android:src="@drawable/ic_baseline_keyboard_backspace_24" />
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tvSeven"
+                style="@style/numBtnStyle"
+                android:background="#455A64"
+                android:text="7"
+                android:textColor="@color/white"
+                android:textSize="30dp" />
+
+            <TextView
+                android:id="@+id/tvEight"
+                style="@style/numBtnStyle"
+                android:background="#455A64"
+                android:text="8"
+                android:textColor="@color/white"
+                android:textSize="30dp" />
+
+            <TextView
+                android:id="@+id/tvNine"
+                style="@style/numBtnStyle"
+                android:background="#455A64"
+                android:text="9"
+                android:textColor="@color/white"
+                android:textSize="30dp" />
+
+            <TextView
+                android:id="@+id/tvMultiply"
+                style="@style/numBtnStyle"
+                android:background="#455A64"
+                android:text="x"
+                android:textColor="@color/white"
+                android:textSize="30dp" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tvFour"
+                style="@style/numBtnStyle"
+                android:background="#455A64"
+                android:text="4"
+                android:textColor="@color/white"
+                android:textSize="30dp" />
+
+            <TextView
+                android:id="@+id/tvFive"
+                style="@style/numBtnStyle"
+                android:background="#455A64"
+                android:text="5"
+                android:textColor="@color/white"
+                android:textSize="30dp" />
+
+            <TextView
+                android:id="@+id/tvSix"
+                style="@style/numBtnStyle"
+                android:background="#455A64"
+                android:text="6"
+                android:textColor="@color/white"
+                android:textSize="30dp" />
+
+
+            <TextView
+                android:id="@+id/tvMinus"
+                style="@style/numBtnStyle"
+                android:background="#455A64"
+                android:text="-"
+                android:textColor="@color/white"
+                android:textSize="60dp" />
+
+        </LinearLayout>
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tvOne"
+                style="@style/numBtnStyle"
+                android:background="#455A64"
+                android:text="1"
+                android:textColor="@color/white"
+                android:textSize="30dp" />
+
+            <TextView
+                android:id="@+id/tvTwo"
+                style="@style/numBtnStyle"
+                android:background="#455A64"
+                android:text="2"
+                android:textColor="@color/white"
+                android:textSize="30dp" />
+
+            <TextView
+                android:id="@+id/tvThree"
+                style="@style/numBtnStyle"
+                android:background="#455A64"
+                android:text="3"
+                android:textColor="@color/white"
+                android:textSize="30dp" />
+
+            <TextView
+                android:id="@+id/tvPlus"
+                style="@style/numBtnStyle"
+                android:background="#455A64"
+                android:text="+"
+                android:textColor="@color/white"
+                android:textSize="30dp" />
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tvDot"
+                style="@style/numBtnStyle"
+                android:background="#455A64"
+                android:text="."
+                android:textColor="@color/white"
+                android:textSize="30dp" />
+
+            <TextView
+                android:id="@+id/tvZero"
+                style="@style/numBtnStyle"
+                android:background="#455A64"
+                android:text="0"
+                android:textColor="@color/white"
+                android:textSize="50dp" />
+
+
+
+
+            <TextView
+                android:id="@+id/tvClearall"
+                style="@style/numBtnStyle"
+                android:background="#455A64"
+                android:text="AC"
+                android:textColor="@color/white"
+                android:textSize="30dp" />
+
+
+            <TextView
+                android:id="@+id/tvEqual"
+                style="@style/numBtnStyle"
+                android:background="#E65100"
+                android:text="="
+                android:textColor="@color/white"
+                android:textSize="30dp" />
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
+
